@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>  
+</head>
+<body>
+  <main>
+    
+    <section id="section-left"> 
+    <h2>Learn to code by watching others</h2>  
+    <p id="p-content" aria-label="paragraph content">See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+      but understanding how developers think is invaluable. </p>           
+  </section>
+  <section id="section-right"> 
+    <header id="frequency" aria-label="price frequency">    
+      <p id="price" aria-label="offer price"><span id="free-offer" role="label" aria-label="free offer">Try it free 7 days</span> then $20/mo. thereafter</p>
+    </header>
+    
+    <form  action="#"  id="form">          
+     <input type="text" id="firstName" autocomplete="name" name="firstName" placeholder="First Name" aria-describedby="firstName-empty-error" aria-invalid="true"> 
+     <p class="error" id="firstName-empty-error" role="alert"></p> 
+      <input type="text" id="lastName" autocomplete="additional-name" name="lastName" placeholder="Last Name"  aria-describedby="lastName-empty-error" aria-invalid="true"> 
+      <p class="error" id="lastName-empty-error" role="alert"></p>              
+      <input type="email" id="email" autocomplete="email" name="email" placeholder="Email Address"  aria-describedby="email-error" aria-invalid="true"> 
+      <p class="error" id="email-error" role="alert"></p>  
+      <input type="password" id="pwd" autocomplete="current-password" name="pwd" placeholder="Password" aria-describedby="pwd-empty-error" aria-invalid="true">
+      <p class="error" id="pwd-empty-error" role="alert"></p> 
+      <input type="submit" value="Claim your free trial" id="submit">    
+    <p id="terms" aria-label="terms and services">
+      By clicking the button, you are agreeing to our <span>Terms and Services</span>
+    </p>
+  </form> 
+</section>
+</main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Jennifer Young</a>.
+    </p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

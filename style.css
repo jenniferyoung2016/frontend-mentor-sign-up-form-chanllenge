@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;    
+}
+
+html {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;     
+}
+
+
+body {
+    margin: 0;
+    padding: 0;    
+    background-image: url('./images/bg-intro-mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ff7a7a;
+    color: #fff; 
+    text-align: center;
+}
+
+ main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    max-width: 100%;        
+    margin: 20px 20px; 
+}
+
+h2 {
+    margin: 10px 50px;   
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1.3px;
+} 
+#p-content {
+    line-height: 1.8;
+    letter-spacing: 1px;
+    margin: 10px 35px; 
+    font-size: 0.7rem;
+    font-weight: 400; 
+}
+
+#section-right {
+    display: flex;
+    flex-direction: column;       
+    align-items: center;      
+}
+
+#frequency {   
+    max-width: 100%;    
+}
+
+#price {       
+    background-color: #6055a5;
+    margin: 30px 0;
+    padding: 25px 80px;
+    border-radius: 5px;      
+    font-size: 0.8rem; 
+    letter-spacing: 0.8px;  
+    box-shadow: 0px 8px 12px -2px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 8px 12px -2px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 8px 12px -2px rgba(0,0,0,0.65); 
+}
+
+#free-offer {
+    font-weight: 700; 
+}
+
+#form {        
+    display: flex;
+    flex-direction: column;    
+    justify-content: center; 
+    align-content: center; 
+    width: 100%;
+    background-color: #fff; 
+    border-radius: 5px;
+    padding: 20px 20px;    
+    margin: 0 20px;
+    box-shadow: 0px 8px 10px 1px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 0px 8px 10px 1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 8px 10px 1px rgba(0,0,0,0.38); 
+}    
+
+#lastName,#email,#pwd {
+    margin-top: 20px;
+}
+
+#firstName, #lastName,#email,#pwd {   
+    border: 1px solid #b9b6d3;  
+    border-radius: 5px;
+    color: #3e3c49;  
+    padding:  15px 50px 15px 15px;
+    background-image: none;      
+}
+ 
+p.error {   
+    color: #ff7a7a;
+    margin: 0;
+    font-size: .8rem;
+    text-align: left;
+}
+  
+input[type="submit"] {    
+    background-color: #38cc8c;    
+    border: none;
+    color: #fff;
+    letter-spacing: 0.8px;
+    text-transform: uppercase; 
+    padding: 20px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 0px 6px 8px -2px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 6px 8px -2px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 6px 8px -2px rgba(0,0,0,0.65);
+}
+
+#submit:hover {
+    cursor: pointer; 
+}
+
+#terms  {
+    color: #b9b6d3;
+    font-size: 0.6rem;   
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    padding: 0 30px; 
+    margin-bottom: 30px;     
+}
+
+#terms span {
+    color:#ff7a7a;
+    font-weight: 700;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+  @media (min-width: 375px){    
+    
+      body {
+            background-image: url('./images/bg-intro-desktop.png'); 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main {
+            flex-direction: row;            
+        }
+
+        #section-left {
+            margin-left: 70px;
+            margin-right: 10px;          
+            flex-basis: 50%;           
+        }
+
+        h2 {    
+            font-size: 2.5rem;       
+            line-height: 1.2;
+          }
+
+          #p-content {
+            text-align: left;
+            padding-left: 35px;
+          }
+
+        #section-right {            
+            margin-right: 150px;                       
+            flex-basis:50%;                                 
+        }
+
+        #frequency {            
+            width: 100%;            
+        }
+        
+        #form {
+            max-height: 85%;  
+            padding-top: 50px;    
+        }
+
+        
+        #terms {
+           margin-bottom: 35px;
+        } 
+     
+    
+} 
